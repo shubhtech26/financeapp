@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/login'; // Your login component
+import Dashboard from './components/Dashboard'; // Your protected component
+import ProtectedRoute from './ProtectedRoute'; // Your protected route component
+import { isLoggedIn } from './utils/auth'; // Importing the authentication utility
+
+const App = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  // Check if the user is logged in when the app mounts
+  useEffect(() => {
+    setIsAuthenticated(isLoggedIn()); // Check if the user is authenticated
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route 
+          path="/" 
+          element={<Login setIsAuthenticated={setIsAuthenticated} />} // Pass the setter to Login component
+        />
+        <Route 
+          path="/dashboard" 
+          element={
+            <ProtectedRoute element={<Dashboard />} /> // Protect the Dashboard route
+          } 
+        />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

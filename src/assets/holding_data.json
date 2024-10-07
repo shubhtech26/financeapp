@@ -1,0 +1,112 @@
+[
+    {
+        "id": 29,
+        "name": "MSB Financial Corp.",
+        "symbol": "MSBF",
+        "date": "08/12/2024",
+        "ltp": 4652.6,
+        "current value": 9843.75,
+        "overall p&l": 5191.15,
+        "overallPercent": 52.73549206349206,
+        "sector": "Finance"
+    },
+    {
+        "id": 33,
+        "name": "ATN International, Inc.",
+        "symbol": "ATNI",
+        "date": "02/08/2024",
+        "ltp": 3725.08,
+        "current value": 6745.06,
+        "overall p&l": 3019.98,
+        "overallPercent": 44.773211802415396,
+        "sector": "Public Utilities"
+    },
+    {
+        "id": 8,
+        "name": "Netlist, Inc.",
+        "symbol": "NLST",
+        "date": "04/17/2024",
+        "ltp": 4871.78,
+        "current value": 2984.55,
+        "overall p&l": -1887.23,
+        "overallPercent": -63.233318255683436,
+        "sector": "Technology"
+    },
+    {
+        "id": 15,
+        "name": "MarineMax, Inc.",
+        "symbol": "HZO",
+        "date": "03/18/2024",
+        "ltp": 7792.58,
+        "current value": 4001.51,
+        "overall p&l": -3791.07,
+        "overallPercent": -94.74098527805754,
+        "sector": "Consumer Services"
+    },
+    {
+        "id": 42,
+        "name": "On Assignment, Inc.",
+        "symbol": "ASGN",
+        "date": "12/26/2023",
+        "ltp": 6204.33,
+        "current value": 1486.08,
+        "overall p&l": -4718.25,
+        "overallPercent": -317.4963662790698,
+        "sector": "Technology"
+    },
+    {
+        "id": 18,
+        "name": "Turtle Beach Corporation",
+        "symbol": "HEAR",
+        "date": "08/07/2024",
+        "ltp": 5799.15,
+        "current value": 6389.11,
+        "overall p&l": 589.96,
+        "overallPercent": 9.233836950686403,
+        "sector": "Consumer Durables"
+    },
+    {
+        "id": 69,
+        "name": "National Research Corporation",
+        "symbol": "NRCIB",
+        "date": "02/02/2024",
+        "ltp": 6387.7,
+        "current value": 5787.93,
+        "overall p&l": -599.77,
+        "overallPercent": -10.36242663612034,
+        "sector": "Health Care"
+    },
+    {
+        "id": 2,
+        "name": "Pacific Special Acquisition Corp.",
+        "symbol": "PAACU",
+        "date": "02/25/2024",
+        "ltp": 2682.94,
+        "current value": 2152.87,
+        "overall p&l": -530.07,
+        "overallPercent": -24.621551696107986,
+        "sector": "Finance"
+    },
+    {
+        "id": 4,
+        "name": "Bio-Path Holdings, Inc.",
+        "symbol": "BPTH",
+        "date": "05/21/2024",
+        "ltp": 5997.58,
+        "current value": 6752.94,
+        "overall p&l": 755.36,
+        "overallPercent": 11.185646548022047,
+        "sector": "Health Care"
+    },
+    {
+        "id": 17,
+        "name": "Stellar Acquisition III Inc.",
+        "symbol": "STLR",
+        "date": "03/28/2024",
+        "ltp": 2945.54,
+        "current value": 7920.83,
+        "overall p&l": 4975.29,
+        "overallPercent": 62.81273553402863,
+        "sector": "Finance"
+    }
+]

@@ -1,5 +1,6 @@
+// src/components/AssetList.js
+
 import React, { useState, useEffect } from 'react';
-import { logoutUser } from '../utils/auth'; // Import logout function from auth utilities
 
 const AssetList = () => {
   const stockData = [
@@ -14,12 +15,6 @@ const AssetList = () => {
   const [sortKey, setSortKey] = useState('ticker');
   const [sortOrder, setSortOrder] = useState('asc');
   const [filteredData, setFilteredData] = useState(stockData);
-
-  // Handle the Logout button click
-  const handleLogout = () => {
-    logoutUser();  // Call logout function to remove the user session
-    window.location.href = '/'; // Redirect to the login page
-  };
 
   useEffect(() => {
     let filtered = stockData.filter((item) =>
@@ -48,18 +43,8 @@ const AssetList = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Stock Market Assets</h1>
-        {/* Logout button */}
-        <button
-          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-          onClick={handleLogout}
-        >
-          Logout
-        </button>
-      </div>
+      <h1 className="text-2xl font-bold mb-4">Stock Market Assets</h1>
 
-      {/* Search bar */}
       <input
         type="text"
         placeholder="Search by ticker or sector"
@@ -68,7 +53,6 @@ const AssetList = () => {
         className="p-2 border border-gray-300 rounded mb-4 w-full"
       />
 
-      {/* Table */}
       <table className="min-w-full bg-white border">
         <thead>
           <tr>
@@ -98,9 +82,7 @@ const AssetList = () => {
             ))
           ) : (
             <tr>
-              <td colSpan="4" className="text-center py-4">
-                No matching records found
-              </td>
+              <td colSpan="4" className="text-center py-4">No matching records found</td>
             </tr>
           )}
         </tbody>

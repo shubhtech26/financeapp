@@ -37,7 +37,7 @@ const Login = () => {
         <div className="flex justify-center mb-6">
           <img src="/assets/logo.png" alt="Library Management Logo" className="w-24 h-auto" />
         </div>
-        
+        <h2 className="text-2xl font-bold text-center text-gray-700 mb-6">Library System</h2>
         <h3 className="text-xl text-center text-gray-500 font-semibold mb-8">Sign in</h3>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form onSubmit={handleLogin}>

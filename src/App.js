@@ -6,7 +6,8 @@ import Login from './components/login'; // Your login component
 import Dashboard from './components/Dashboard'; // Your protected component
 import ProtectedRoute from './ProtectedRoute'; // Your protected route component
 import { isLoggedIn } from './utils/auth'; // Importing the authentication utility
-
+import AssetList from './components/Dashboard';
+import AssetPage from './components/AssetPage';
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -25,9 +26,14 @@ const App = () => {
         <Route 
           path="/dashboard" 
           element={
-            <ProtectedRoute element={<Dashboard />} /> // Protect the Dashboard route
+            <ProtectedRoute element={<AssetPage/>}  /> // Protect the Dashboard route
           } 
         />
+       <Route 
+          path="/demo" 
+          element= {<AssetPage/>} // Pass the setter to Login component
+        />
+
       </Routes>
     </Router>
   );
